@@ -1,0 +1,246 @@
+@charset "utf-8";
+
+
+@font-face {
+  font-family: vin;
+  src: url('/font/VinaSans-Regular.ttf');
+} 
+
+@font-face {
+  font-family: dhur;
+  src: url('/font/Dhurjati-Regular.ttf');
+}
+
+
+@keyframes grow{
+  0%{
+    box-shadow: none;
+  }
+  100%{
+  text-shadow: 7px 7px 2px green;
+    
+  }
+}
+
+@keyframes grow_icon{
+  0%{
+    box-shadow: none;
+  }
+  100%{
+    box-shadow: 7px 7px 5px green;
+
+    
+  }
+}
+
+@keyframes grow_eye{
+  0%{
+    box-shadow: none;
+  }
+  100%{
+    box-shadow: 15px 15px 5px green;
+   
+  }
+}
+
+
+
+body{
+  background-color: #ABF62D;
+
+  /* cursor: none; */
+
+}
+
+
+/* header start  */
+.nav{
+  width: 60px;
+  height: 100vh;
+  /* background-color: rgb(19, 18, 18); */
+  position: fixed;
+  left: -1em;
+  top: -1em;
+  margin: 1em 0;
+  padding: 0;
+  border-radius: 10px;
+}
+.nav_con{
+  height: 100vh;
+  /* border: 2px solid maroon; */
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 5;
+}
+
+.nav_con{
+  margin: 1em auto;
+
+}
+
+.nav_con .nav_icon a{
+  width: 40px;
+  height: 40px; 
+  border: 2px solid aqua;
+  margin: 1em 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+  border-radius: 10px;
+  animation: grow_icon 5s linear 1 forwards;
+  z-index: 50;
+
+}
+
+.nav_con .nav_icon a:focus{
+  position: relative;
+  top: 5px;
+  left: 5px;
+  box-shadow: none;
+}
+svg{
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+a .tooltext{
+  color: #fff;
+  position: absolute;
+  visibility: hidden;
+}
+
+a:hover .tooltext{
+  visibility: visible;
+  position: absolute;
+  left: 5em;
+  background-color: rgba(38, 46, 24, 0.89);
+  padding: 5px 10px;
+  border-radius: 5px;
+
+}
+
+
+
+/* header end  */
+
+/* main start  */
+main{
+  margin-left: 7em;
+}
+
+main>h1{
+  font-family: vin;
+  font-size: 7em;
+  color: #ABF62D;
+  position: relative;
+  z-index: 10;
+  animation: grow 5s linear 1 forwards;
+}
+
+.content {
+  width: 50vw;
+  color: #b4b4b4;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 5em;
+  position: relative;
+  left: 2em;
+  bottom: 1em;
+  margin: 0;
+}
+
+.content .name{
+  color: #2dabf6;
+}
+
+.sub_content{
+  font-family: vin;
+  color: #ABF62D;
+  text-align: center;
+  position: relative;
+  bottom: 2.3em;
+  right: 1em;
+  font-size: 5em;
+  animation: grow 5s linear 1 forwards;
+
+}
+
+/* main end  */
+
+
+/* eye ball animation start */
+
+@keyframes eye_move {
+  0%{
+      transform: translate(0);
+  }
+  25%{
+      transform: translate(35px, -35px) skew(12deg, 0);
+  }
+  50%{
+      transform: translate(0);
+  }
+  75%{
+      transform: translate(-35px, 35px) skew(0, 12deg);
+          
+  }
+  50%{
+      transform: translate(0);
+  }       
+}
+
+.con{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 75%;
+  margin: 0;
+}
+
+._1{
+  display: block;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  background: radial-gradient(circle at 50px 30px, #fff 17%, #cfee99 , #ABF62D);
+  border-radius: 50%;
+  animation: grow_eye 5s linear 1 forwards;
+
+}
+
+.i_ball{
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 50px;
+  top: 50px;
+  background: radial-gradient(circle at left top, #fff 25px, rgb(101, 155, 255), rgb(73, 136, 253));
+  border-radius: 50%;
+  animation: eye_move 10s ease-in-out 1s infinite both normal;
+}
+
+.center{
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  position: relative;
+  left: 25px;
+  top: 25px;
+  background: radial-gradient(circle at 10px 10px, rgba(255, 255, 255) 5%, black, black, black);
+  border-radius: 50%;
+}
+
+/* eye ball end  */
+
+
+
+a{
+  text-decoration: none;
+
+}

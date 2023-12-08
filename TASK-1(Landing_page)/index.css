@@ -1,0 +1,287 @@
+@charset "utf=8";
+
+@font-face{
+    font-family: ubuntu;
+    src: url('/font/Ubuntu.ttf');
+}
+
+
+body{
+    margin: 0;
+    margin-top: -1em;
+}
+
+/*header start*/
+header{
+    margin: 0;
+    /* border: 2px solid maroon; */
+    display: flex;
+}
+header>ul{
+    position: relative;
+    left: 75vw;
+    top: 1.5em;
+    /* border: 2px solid goldenrod; */
+    
+    list-style-type: none;
+    display: flex;
+    margin-right: 0;
+}
+
+header>ul>li>a{
+    width: 90px;
+    height: 2em;
+    padding-right: 2em;
+    font-weight: bold;
+    font-family: ubuntu;
+    text-align: center;
+    color: grey;
+    padding: 1em;
+    text-decoration: none;
+}
+/* header>ul>li:hover{
+    background-color: rgb(158, 158, 158);
+} */
+
+header>ul>li>a:hover{
+    background-color: rgb(158, 158, 158);
+    color: orangered;
+    border-radius: 5px;
+}
+
+header>ul>li>a:active, :focus{
+    color: orangered;
+}
+
+
+#logo{
+    /* border: 5px solid maroon; */
+    width: 100px;
+    height: 50px;
+}
+
+
+/*header end*/
+
+main{
+    width: 100%;
+    height: 83vh;
+    /* display: block; */
+    margin: -2.4em auto;
+    background: url('/image/pocket-watch-2031021.jpg') no-repeat center center;
+    background-size: 100% 100%;
+    
+} 
+
+main>h2{
+    width: 500px;
+
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    top: 5em;
+    left: 33em;
+    border-bottom: 5px solid goldenrod;
+    padding-bottom: 1em;
+    
+}
+
+#con{
+    width: 300px;
+    display: block;
+    position: relative;
+    left: 55em;
+    top: 8em;
+    /* border: 5px solid salmon; */
+    margin-bottom: 3em;
+
+}
+
+#con>p{
+    color: white;
+    text-align: center;
+}
+
+#left{
+    width: 300px;
+    display: block;
+    position: relative;
+    left: 55em;
+    top: 8em;
+    /* border: 5px solid salmon;  */
+}
+
+#left>p{
+    color: wheat;
+    text-align: center;
+    margin-left: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#s_button{
+    width: 100px;
+    height: 2em;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bolder;
+    /* position: relative;
+    left: 9em; */
+    margin-left: 8em;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 10;
+    
+}
+
+#s_button:hover{
+    animation: member 7s linear infinite alternate none;
+}
+
+#s_button:focus{
+    position: relative;
+    left: 3px;
+    top: 5px;
+}
+
+#discount{
+    width: 60px;
+    height: 30px;
+    position: relative;
+    margin: 0 0 0 -0.2em;
+    padding: 0;
+    transform-origin: center left;
+    transform: rotate(40deg);
+    z-index: 5;
+}
+
+@keyframes member {     /*animation*/
+    0% { background-color: red;
+        color: cyan; }
+    20% { background-color: orange;
+            color: azure; }
+    40% { background-color: yellow; 
+        color: darkblue;
+    }
+    60% { background-color: green; 
+        color: magenta;
+    }
+    80% { background-color: blue; 
+        color: darkred;
+    }
+    100% { background-color: purple; 
+        color: chartreuse;
+    }
+    }
+
+@keyframes colors {     /*animation*/
+    0% { background-color: red; }
+    20% { background-color: orange; }
+    40% { background-color: yellow; }
+    60% { background-color: green; }
+    80% { background-color: blue; }
+    100% { background-color: purple; }
+    }
+
+#button{
+    width: 100px;
+    height: 2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    /* position: relative;
+    left: 9em; */
+    margin-left: 8em;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+#button:hover{
+    animation: colors 7s linear infinite alternate none;
+}
+
+#button:focus{
+    position: relative;
+    left: 3px;
+    top: 5px;
+}
+/*main end*/
+
+/*footer start*/
+/* footer{
+    /* background-color:rgb(202, 174, 202) */
+    /*_*/
+/*} */
+
+footer>ul{
+    display: flex;
+    margin: 2em 0 0 45%;
+    list-style-type: none;
+}
+
+footer>ul>li{
+    width: 100px;
+    height: 100px;
+    margin: 2em 0 0 0;
+}
+
+footer>ul>li>a{
+    margin-left: -em;
+}
+#fpic{
+    width: 45px;
+    height: 45px;
+    /* margin: auto 2em auto 2em; */
+}
+
+#fpic:hover{
+    background-color: rgb(158, 158, 158);
+
+}
+
+#ypic{
+    width: 45px;
+    height: 45px;
+    margin-left: -2em;
+    /* margin: auto 2em auto 2em; */
+}
+
+#ypic:hover{
+    background-color: rgb(158, 158, 158);
+
+}
+a{
+    text-decoration: none;;
+}
+a svg{
+    width: 50px;
+    height: 50px;
+
+}
+
+.face{
+    color: blue;
+    border-radius: 50%;
+}
+.face:hover{
+    background-color: blue;
+    color: #fff;
+}
+.you{
+    color: red;
+    border-radius: 40%;
+}
+
+.you:hover{
+    color: #fff;
+    background-color: red;
+}
+
+/*footer end*/

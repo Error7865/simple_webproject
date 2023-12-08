@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+/* 
+sssssssssssssssss
+sssssssssssssssss
+ssss          sss
+sssssss   sssssss
+sssssss   sssssss
+sssssss   sssssss
+sssssss   sssssss
+ssss         ssss
+sssssssssssssssss */
+
+
+@font-face {
+  font-family: vin;
+  src: url("/font/VinaSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: dhur;
+  src: url(/font/Dhurjati-Regular.ttf);
+}
+
+@keyframes grow_icon{
+    0%{
+      box-shadow: none;
+    }
+    100%{
+      box-shadow: 7px 7px 5px #080f06;     
+    }
+  }
+
+body{
+    background-color: #172D13;
+}
+/* header start  */
+.nav{
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    left: -1em;
+    top: -1em;
+    margin: 1em 0;
+    padding: 0;
+    border-radius: 10px;
+  }
+  .nav_con{
+    height: 100vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 5;
+  }
+  
+  .nav_con{
+    margin: 1em auto;
+  
+  }
+  
+  .nav_con .nav_icon a{
+    width: 40px;
+    height: 40px; 
+    border: 2px solid aqua;
+    margin: 1em 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: crimson;
+    border-radius: 10px;
+    animation: grow_icon 5s linear 1 forwards;
+    z-index: 50;
+  
+  }
+  
+  .nav_con .nav_icon a:focus{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    box-shadow: none;
+  }
+  svg{
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+  a .tooltext{
+    color: #fff;
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  a:hover .tooltext{
+    visibility: visible;
+    position: absolute;
+    left: 5em;
+    background-color: rgba(38, 46, 24, 0.89);
+    padding: 5px 10px;
+    border-radius: 5px;
+  
+  }
+  /* header end  */
+/* main start  */
+
+.info{
+  width: 40vw;
+  margin-top: 5em;
+  margin-left: 5em;
+}
+.contact{
+  list-style-type: none;
+  font-family: dhur;
+  font-size: large;
+}
+.contact a .mini_icon{
+  width: 20px;
+  height: 20px;
+  color: #6BB77B;
+}
+
+.contact a{
+  text-decoration: none;
+  color: white;
+}
+
+.contact a:hover{
+  color: #6BB77B;
+}
+.contact a:hover .mini_icon{
+  color: #fff;
+}
+.contact a .item{
+  position: relative;
+  right: 0.5em;
+  bottom: 0.5em;
+}
+
+.contact .sub_con{
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.sub_con li .media{
+  width: 30px;
+  height: 30px;
+  color: #6BB77B;
+}
+
+.sub_con li .media:hover{
+  color: #fff;
+}
+
+.mail{
+  /* width: 40vw; */
+  position: absolute;
+  top: 5em;
+  left: 45vw;
+  /* border: 2px solid magenta; */
+}
+
+.mail .input{
+  width: 10em;
+  height: 2em;
+  color: #172D13;
+  background-color: #6BB77B;
+  font-family: dhur;
+  font-size: x-large;
+  border-radius: 20px;
+  border: none;
+  padding-left: 0.5em;
+  margin: 0.5em auto;
+}
+
+.mail .input:hover{
+  border: none;
+}
+
+#message{
+  width: 25em;
+  height: 10em;
+  color: #172D13;
+  background-color: #6BB77B;
+  font-family: dhur;
+  font-size: x-large;
+  border-radius: 20px;
+  padding-left: 0.5em;
+}
+
+#submit{
+  width: 5em;
+  position: relative;
+  left: 20vw;
+  top: 1em;
+  color: grey;
+  background-color: #6BB77B;
+  font-family: dhur;
+  font-size: x-large;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 5px 5px #080f06;
+  
+}
+
+#submit:focus{
+  box-shadow: none;
+  transform: translate(5px, 5px);
+}
+
+/* main end  */

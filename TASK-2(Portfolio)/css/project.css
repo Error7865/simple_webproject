@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+@keyframes grow_icon{
+    0%{
+      box-shadow: none;
+      
+    }
+    100%{
+      box-shadow: 7px 7px 5px #111b25;
+  
+      
+    }
+}
+
+@font-face {
+  font-family: dhur;
+  src: url("/font/Dhurjati-Regular.ttf");
+}
+
+body{
+  background-color: #102632;
+}
+
+
+/* header start  */
+.nav{
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    left: -1em;
+    top: -1em;
+    margin: 1em 0;
+    padding: 0;
+    border-radius: 10px;
+  }
+  .nav_con{
+    height: 100vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 5;
+  }
+  
+  .nav_con{
+    margin: 1em auto;
+  
+  }
+  
+  .nav_con .nav_icon a{
+    width: 40px;
+    height: 40px; 
+    border: 2px solid #ed6495;
+    margin: 1em 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2b532;
+    border-radius: 10px;
+    animation: grow_icon 5s linear 1 forwards;
+    z-index: 50;
+  
+  }
+  
+  .nav_con .nav_icon a:focus{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    box-shadow: none;
+  }
+  svg{
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+  }
+
+  svg:hover{
+    color: #ed6495;
+  }
+  a .tooltext{
+    color: #fff;
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  a:hover .tooltext{
+    visibility: visible;
+    position: absolute;
+    left: 5em;
+    background-color: rgba(38, 46, 24, 0.89);
+    padding: 5px 10px;
+    border-radius: 5px;
+  
+  }
+  
+
+  /* header end  */
+
+  /* main start  */
+
+  main h1{
+    color: #f2b532;
+    text-align: center;
+    font-family: dhur;
+  }
+
+  .list{
+    width: 70vw;
+    margin-left: 5em;
+    list-style-type: none;
+  }
+
+   .list li{
+    width: 70vw;
+ 
+  }
+
+  img{
+    width: 100px;
+    height: 100px;
+    border: 5px solid #265d6d;
+    border-radius: 50%;
+    position: relative;
+    left: 4em;
+  }
+  .list li a{
+    width: 100px;
+    height: 500px;
+    /* text-align: center; */
+    /* border: 5px solid maroon; */
+  }
+  .icon{
+    position: relative;
+    left: 30vw;
+    text-decoration: none;
+    color: #265d6d;
+  }
+  .icon svg{
+    position: relative;
+    left: 4em;
+    border: 5px solid #265d6d ;
+    border-radius: 50%;
+    background-color: red;
+  }
+
+  .icon:hover svg{
+    color: red;
+    background-color: #fff;
+  }
+
+  .icon .title{
+    color: #f2b532;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  li .info{
+    color: white;
+  }
+  .file{
+    text-decoration: none;
+    color: #173849;
+  }
+
+  /* main end  */
