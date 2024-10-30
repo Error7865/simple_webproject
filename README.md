@@ -1,2 +1,2 @@
-# Lapworkz_intern
-All tasks that Lapworkz told to do was separated by their task no and name
+# Simple few web application
+all thoes are simple web application
